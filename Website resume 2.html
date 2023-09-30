@@ -13,7 +13,7 @@
         }
         
         .scene {
-            display: none; 
+         
             color: rgb(0, 0, 0);
             padding: 20px;
         }
@@ -118,6 +118,12 @@
             overflow: hidden;
             animation: typing 0.3s steps(15), cursor .4s step-end infinite alternate;
         }
+        @keyframes cursor {
+            50% { border-color: transparent}
+        }
+        @keyframes typing {
+            from { width: 0 }
+        }
 
         .bottom {
             background-color: rgb(0, 0, 0);
@@ -140,22 +146,12 @@
         }
        
         h2 {
-			color: black;
+            color: black;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.199);
-			text-align: center;
-            background-color: rgba(73, 240, 255, 0.507);
+            text-align: center;
+            background-color: rgba(0, 234, 255, 0.258);
             z-index: 99;
             backdrop-filter: blur(30px);
-        }
-        @keyframes cursor {
-            50% { border-color: transparent}
-        }
-        @keyframes typing {
-            from { width: 0 }
-        }
-
-        .infoQuestion {
-            
         }
     </style>
     <script>
@@ -172,6 +168,8 @@
                 selectedScene.style.display = 'block';
             }
         }
+
+        
     </script>
 </head>
 <body>
@@ -187,113 +185,194 @@
         <div class="btn-container">
             <div class="left">
                 <h3> Name: </h3>
-                <button class="btn" onclick="showScene(1)">
-                    Kenjie Emmanuel Lagaras <br>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_imXD6Y1mU7p8-0VaIhDJTg7hGjlvmpekqLMeLuqejYdcDQ0xLUTTuiB4SqnT56eQMXg&usqp=CAU" alt="gfg-logo" style="width:200px;height:200px; box-shadow: 0 0 8px 8px white inset;">
-                </button>
-                <br>
                 <button class="btn" onclick="showScene(2)">
-                    Jayrald John C. Dalman <br>
-                    <img src="http://drive.google.com/uc?export=view&id=1CPJ_9e6FFU36-JKJD3XEte0h3-WRHd6D" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;">
+                    Kenjie Emmanuel Lagaras <br>
+                    <img src="images/Kenjie.jpg" class="img-fluid" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;"> 
+                    <!--<img src="https://drive.google.com/uc?id=1D715Zjiw9Rb2wkNeAkeSFB9idj6Wc7CG" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;">-->
                 </button>
                 <br>
                 <button class="btn" onclick="showScene(3)">
-                    Judito Pepito <br>
-                    <img src="http://drive.google.com/uc?export=view&id=1IWe4cvqxjJEhuCcEs-KHAjkFGr6F8Gh6" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;">
+                    Jayrald John C. Dalman <br>
+                     <img src="images/Dalman.jpg" class="img-fluid" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;"> 
+                    <!--<img src="https://drive.google.com/uc?id=1r8Nl3YMrvWOlRNqKM3SrXBrxIzBKjJe8" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;"> -->
                 </button>
                 <br>
                 <button class="btn" onclick="showScene(4)">
-                    Kyle Sabatin <br>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_imXD6Y1mU7p8-0VaIhDJTg7hGjlvmpekqLMeLuqejYdcDQ0xLUTTuiB4SqnT56eQMXg&usqp=CAU" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;">
+                    Judito Pepito <br>
+                    <img src="images/Judito.jpg" class="img-fluid" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;"> 
+                    <!--<img src="https://drive.google.com/uc?id=1IWe4cvqxjJEhuCcEs-KHAjkFGr6F8Gh6" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;">-->
                 </button>
                 <br>
                 <button class="btn" onclick="showScene(5)">
+                    Kyle Sabatin <br>
+                    <img src="images/Kyle.jpg" class="img-fluid" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;"> 
+                    <!--<img src="https://drive.google.com/uc?id=1hCzrvtArebXGcUBHJib58sPHn4qFgASu" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;">-->
+                </button>
+                <br>
+                <button class="btn" onclick="showScene(6)">
                     Vincent Alen P. Castro <br>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_imXD6Y1mU7p8-0VaIhDJTg7hGjlvmpekqLMeLuqejYdcDQ0xLUTTuiB4SqnT56eQMXg&usqp=CAU" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;">
+                    <!--<img src="https://drive.google.com/uc?id=1IWe4cvqxjJEhuCcEs-KHAjkFGr6F8Gh6" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;">-->
                 </button>
             </div>
         </div>
 
-        <div class="scene" id="scene1">
-            
+        <div class="scene" id="scene1" style="margin-top: 200px; margin-left: -200px; text-align: center;">
+        <h1> GROUP 2 Creative Web Design! </h1>
+        </br>
+        <h4> Welcome to our online website! Explore our comprehensive resume, showing our qualifications, and experience. Gain valuable insights into our career journey and discover how we can contribute to your organization. Let's connect and explore potential opportunities together.</h4>
         </div>
 
         <div class="scene" id="scene2">
             <div class="right">
                 <div class="name">
-                    <h1>Jayrald John C. Dalman</h1>
-                    </div>
-                    <div class="title">
-                        <p>Computer Engineer</p>
-                    </div>
-                    <div class="Personal Data">
-                        <h2>Personal Data</b> </h2>
-                        <b>Date of Birth:</b> </br>
-		        		<b>Place of Birth:</b> </br>
-		        		<b>Civil Status:</b> </br>
-		        		<b>Citizenship:</b> </br>
-		        		<b>Religion:</b> </br>
-		        		<b>Height:</b> </br>
-		        		<b>Weight:</b> </br>
-			        	<b>Father's Name:</b> </br>
-			        	<b>Mother's Name:</b> </br>
-			        	<b>SSS No.:</b> </br>
-			        	<b>TIN #:</b> </br> 
-			        	</br>		
-                    </div>
-			        <div style="margin-left: 50%; margin-top: -290px;"> 
-			        	June 09, 2003 </br>
-			        	Cebu City</br>
-			        	Single</br>
-			        	Filipino</br>
-			        	Born Again Christian</br>
-			        	170 cm</br>
-			        	55kg</br>
-			        	Jojie B. Dalman</br>
-			        	Benigna C. Dalman</br>
-			        	None</br>
-			        	None</br>
-		                </br>
-                    </div>
-                    <div class="Educational Background">
-			        <h2>Educational Background</b> </h2>
+                    <h1>Kenjie Emmanuel D. Lagaras</h1>
+                </div>
+                <div class="title">
+                    <p>Computer Engineer</p>
+                </div>
+                <div class="Personal Data">
+                    <h2>Personal Data</b> </h2>
+                    <b>Date of Birth:</b> </br>
+                    <b>Place of Birth:</b> </br>
+                    <b>Civil Status:</b> </br>
+                    <b>Citizenship:</b> </br>
+                    <b>Religion:</b> </br>
+                    <b>Height:</b> </br>
+                    <b>Weight:</b> </br>
+                    <b>Father's Name:</b> </br>
+                    <b>Mother's Name:</b> </br>
+                    <b>SSS No.:</b> </br>
+                    <b>TIN #:</b> </br> 
+                    </br>        
+                </div>
+                <div style="margin-left: 50%; margin-top: -290px;"> 
+                    September 05, 2002 </br>
+                    Cebu City</br>
+                    Single</br>
+                    Filipino</br>
+                    Roman Catholic</br>
+                    157 cm</br>
+                    55 Kg</br>
+                    Almar Lagaras</br>
+                    Ruby Lagaras</br>
+                    33-91234562-4</br>
+                    254-325-623-000</br>
+                    </br>
+                </div>
+                <div class="Educational Background">
+                    <h2>Educational Background</b> </h2>
                         <b>Primary:</b>
-				        </br>
-				        </br>
-				        </br>
-				        </br>
-				        <b>Secondary:</b>
-				        </br>
-				        </br>
-				        </br>
-				        </br>
-				        </br>
-				        <b>Tertiary:</b>   
-                    </div>
-			        <div style="margin-left: 50%; margin-top: -240px;"> 
-				        <b>Compostela Central School</b></br>
-				        Cogon, Compostela, Cebu </br>
-				        2010-2016</br>
-				        </br>
-				        <b>Compostela Science and Technology High School</b></br>
-				        Cogon, Compostela, Cebu</br>
-				        2016-2022</br>
-				        </br>
-				        <b>Cebu Technological University Danao Campus</b></br>
-				        Sabang, Danao City, Cebu</br>
-				        2022-2023
-				        </br>
-				        </br>
-			        </div>
-                    <div class="Employment history">
-                        <h2>Employment history</h2>
-				        </br>
-                        <b>None</b> 
-                    </div>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+                        <b>Secondary:</b>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+                        <b>Tertiary:</b>   
+                </div>
+                <div style="margin-left: 50%; margin-top: -215px;"> 
+                    <b>Dominican School</b></br>
+                    Pitogo, Consolacion, Cebu </br>
+                    2010-2016</br>
+                    </br>
+                    <b>La Consolacion College Liloan</b></br>
+                    Poblacion, Liloan, Cebu</br>
+                    2016-2022</br>
+                    </br>
+                    <b>Cebu Technological University Danao Campus</b></br>
+                    Saband, Danao</br>
+                    2022-2023
+                    </br>
+                    </br>
+                </div>
+                <div class="Employment history">
+                    <h2>Employment history</h2>
+                    </br>
+                    <b>None</b> 
                 </div>
             </div>
         </div>
-        <div class="bottom"> Thank you for watching</div>
+
+        <div class="scene" id="scene3">
+            <div class="right">
+                <div class="name">
+                    <h1>Jayrald John C. Dalman</h1>
+                </div>
+                <div class="title">
+                    <p>Computer Engineer</p>
+                </div>
+                <div class="Personal Data">
+                    <h2>Personal Data</b> </h2>
+                    <b>Date of Birth:</b> </br>
+                    <b>Place of Birth:</b> </br>
+                    <b>Civil Status:</b> </br>
+                    <b>Citizenship:</b> </br>
+                    <b>Religion:</b> </br>
+                    <b>Height:</b> </br>
+                    <b>Weight:</b> </br>
+                    <b>Father's Name:</b> </br>
+                    <b>Mother's Name:</b> </br>
+                    <b>SSS No.:</b> </br>
+                    <b>TIN #:</b> </br> 
+                    </br>        
+                </div>
+                <div style="margin-left: 50%; margin-top: -290px;"> 
+                    June 09, 2003 </br>
+                    Cebu City</br>
+                    Single</br>
+                    Filipino</br>
+                    Born Again Christian</br>
+                    170 cm</br>
+                    55kg</br>
+                    Jojie B. Dalman</br>
+                    Benigna C. Dalman</br>
+                    None</br>
+                    None</br>
+                    </br>
+                </div>
+                <div class="Educational Background">
+                    <h2>Educational Background</b> </h2>
+                        <b>Primary:</b>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+                        <b>Secondary:</b>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+                        <b>Tertiary:</b>   
+                </div>
+                <div style="margin-left: 50%; margin-top: -215px;"> 
+                    <b>Compostela Central School</b></br>
+                    Cogon, Compostela, Cebu </br>
+                    2010-2016</br>
+                    </br>
+                    <b>Compostela Science and Technology High School</b></br>
+                    Cogon, Compostela, Cebu</br>
+                    2016-2022</br>
+                    </br>
+                    <b>Cebu Technological University Danao Campus</b></br>
+                    Sabang, Danao City, Cebu</br>
+                    2022-2023
+                    </br>
+                    </br>
+                </div>
+                <div class="Employment history">
+                    <h2>Employment history</h2>
+                    </br>
+                    <b>None</b> 
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more scenes as needed -->
+
+    </div>
+    <div class="bottom"> Thank you for watching</div>
 </body>
 </html>
-
