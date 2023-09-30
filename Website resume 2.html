@@ -13,11 +13,11 @@
         }
         
         .scene {
-         
             color: rgb(0, 0, 0);
             padding: 20px;
+			overflow: hidden;
         }
-
+        
         .btn {
             position: static; 
             top: 0;
@@ -98,7 +98,7 @@
             text-align: center;
             justify-content: left;
             width: 350px;
-            height: 200vh; 
+            height: 150vh; 
             padding: 20px;
             color: rgb(255, 255, 255);
             backdrop-filter: blur(30px);
@@ -124,6 +124,15 @@
         @keyframes typing {
             from { width: 0 }
         }
+        
+        .name {
+            color: black;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.199);
+            text-align: center;
+            background-color: rgba(0, 234, 255, 0.258);
+            z-index: 99;
+            backdrop-filter: blur(30px);
+        }
 
         .bottom {
             background-color: rgb(0, 0, 0);
@@ -131,6 +140,7 @@
             text-align: center;
             color: rgb(255, 255, 255);
             padding: 20px;
+            z-index: 20;
         }
 
         .image,
@@ -146,13 +156,12 @@
         }
        
         h2 {
-            color: black;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.199);
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
             text-align: center;
             background-color: rgba(0, 234, 255, 0.258);
             z-index: 99;
             backdrop-filter: blur(30px);
-        }
+        } 
     </style>
     <script>
         function showScene(sceneNumber) {
@@ -167,9 +176,7 @@
             if (selectedScene) {
                 selectedScene.style.display = 'block';
             }
-        }
-
-        
+        }     
     </script>
 </head>
 <body>
@@ -187,37 +194,37 @@
                 <h3> Name: </h3>
                 <button class="btn" onclick="showScene(2)">
                     Kenjie Emmanuel Lagaras <br>
-                    <img src="images/Kenjie.jpg" class="img-fluid" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;"> 
-                    <!--<img src="https://drive.google.com/uc?id=1D715Zjiw9Rb2wkNeAkeSFB9idj6Wc7CG" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;">-->
+                    <!--<img src="images/Kenjie.jpg" class="img-fluid" alt="gfg-logo" style="width:200px; height:200px; border: 2px solid black;"> -->
+                    <img src="https://drive.google.com/uc?id=1D715Zjiw9Rb2wkNeAkeSFB9idj6Wc7CG" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;">
                 </button>
                 <br>
                 <button class="btn" onclick="showScene(3)">
                     Jayrald John C. Dalman <br>
-                     <img src="images/Dalman.jpg" class="img-fluid" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;"> 
-                    <!--<img src="https://drive.google.com/uc?id=1r8Nl3YMrvWOlRNqKM3SrXBrxIzBKjJe8" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;"> -->
+                    <!--<img src="images/Dalman.jpg" class="img-fluid" alt="gfg-logo" style="width:200px; height:200px; border: 2px solid black;"> -->
+                    <img src="https://drive.google.com/uc?id=1r8Nl3YMrvWOlRNqKM3SrXBrxIzBKjJe8" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;"> 
                 </button>
                 <br>
                 <button class="btn" onclick="showScene(4)">
                     Judito Pepito <br>
-                    <img src="images/Judito.jpg" class="img-fluid" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;"> 
-                    <!--<img src="https://drive.google.com/uc?id=1IWe4cvqxjJEhuCcEs-KHAjkFGr6F8Gh6" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;">-->
+                    <!--<img src="images/Judito.jpg" class="img-fluid" alt="gfg-logo" style="width:200px; height:200px; border: 2px solid black;"> -->
+                    <img src="https://drive.google.com/uc?id=1IWe4cvqxjJEhuCcEs-KHAjkFGr6F8Gh6" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;">
                 </button>
                 <br>
                 <button class="btn" onclick="showScene(5)">
                     Kyle Sabatin <br>
-                    <img src="images/Kyle.jpg" class="img-fluid" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;"> 
-                    <!--<img src="https://drive.google.com/uc?id=1hCzrvtArebXGcUBHJib58sPHn4qFgASu" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;">-->
+                    <!--<img src="images/Kyle.jpg" class="img-fluid" alt="gfg-logo" style="width:200px; height:200px; border: 2px solid black;"> -->
+                    <img src="https://drive.google.com/uc?id=1hCzrvtArebXGcUBHJib58sPHn4qFgASu" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;">
                 </button>
                 <br>
                 <button class="btn" onclick="showScene(6)">
                     Vincent Alen P. Castro <br>
-                    <!--<img src="https://drive.google.com/uc?id=1IWe4cvqxjJEhuCcEs-KHAjkFGr6F8Gh6" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;">-->
+                    <img src="https://drive.google.com/uc?id=1TlExdG6QNyRj2JFuwoibxzSp7W8UHwU2" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;">
                 </button>
             </div>
         </div>
 
-        <div class="scene" id="scene1" style="margin-top: 200px; margin-left: -200px; text-align: center;">
-        <h1> GROUP 2 Creative Web Design! </h1>
+        <div class="scene" id="scene1" style="margin-top: 200px; text-align: center; width: 80%;">
+        <h1> GROUP 3 Creative Web Design! </h1>
         </br>
         <h4> Welcome to our online website! Explore our comprehensive resume, showing our qualifications, and experience. Gain valuable insights into our career journey and discover how we can contribute to your organization. Let's connect and explore potential opportunities together.</h4>
         </div>
@@ -225,13 +232,22 @@
         <div class="scene" id="scene2">
             <div class="right">
                 <div class="name">
-                    <h1>Kenjie Emmanuel D. Lagaras</h1>
-                </div>
+                </br>
+                <img src="https://drive.google.com/uc?id=1D715Zjiw9Rb2wkNeAkeSFB9idj6Wc7CG" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;">
+                <h1>Kenjie Emmanuel D. Lagaras</h1>
+                 <p>Villa Azalea, Lot 2 Blk 16 (5713), Cot-Cot, Liloan, Cebu</br>
+                    Mobile: +639673680522</br>
+                    Email: <u>Kenjieemmanuellagaras@gmail.com</u></br>
+                    Facebook: <a href="https://www.facebook.com/profile.php?id=100071886306416">www.Facebook.com/Kenjie</a>
+                    </p>
+                    </br>
+                 </div>
                 <div class="title">
-                    <p>Computer Engineer</p>
+                    
                 </div>
                 <div class="Personal Data">
                     <h2>Personal Data</b> </h2>
+                    </br>
                     <b>Date of Birth:</b> </br>
                     <b>Place of Birth:</b> </br>
                     <b>Civil Status:</b> </br>
@@ -261,6 +277,7 @@
                 </div>
                 <div class="Educational Background">
                     <h2>Educational Background</b> </h2>
+                        </br>
                         <b>Primary:</b>
                         </br>
                         </br>
@@ -291,7 +308,13 @@
                 <div class="Employment history">
                     <h2>Employment history</h2>
                     </br>
-                    <b>None</b> 
+                    <b>SM Mall</b> </br>
+                    Position: Sales Associate</br>
+                    March 2014 - May 2016</br>
+                    </br>
+                    <b>Robinsons Mall</b></br>
+                    Position: Marketing Coordinator</br>
+                    June 2016 - December 2017</br>
                 </div>
             </div>
         </div>
@@ -299,13 +322,20 @@
         <div class="scene" id="scene3">
             <div class="right">
                 <div class="name">
+                    </br>
+                    <img src="https://drive.google.com/uc?id=1r8Nl3YMrvWOlRNqKM3SrXBrxIzBKjJe8" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;">
                     <h1>Jayrald John C. Dalman</h1>
-                </div>
-                <div class="title">
-                    <p>Computer Engineer</p>
+                    <p>160 Purok Maya, Pag-utlan, Maslog, Danao City, Cebu </p>
+                    <p><b>Email:</b> jayraldjohndalman@gmail.com</p>
+                    <p><b>Mobile #:</b> +639334809302</p>
+				    <h4><a href="https://www.facebook.com/XxDalmanskixX">My Facebook Page</a></h4>
+				    <h4><a href="https://www.youtube.com/@dalmanskigd">My Youtube Channel</a></h4>
+                    </br>
                 </div>
                 <div class="Personal Data">
+                </br>
                     <h2>Personal Data</b> </h2>
+                    </br>
                     <b>Date of Birth:</b> </br>
                     <b>Place of Birth:</b> </br>
                     <b>Civil Status:</b> </br>
@@ -335,6 +365,7 @@
                 </div>
                 <div class="Educational Background">
                     <h2>Educational Background</b> </h2>
+                        </br>
                         <b>Primary:</b>
                         </br>
                         </br>
@@ -370,9 +401,259 @@
             </div>
         </div>
 
-        <!-- Add more scenes as needed -->
+        <div class="scene" id="scene4">
+            <div class="right">
+                <div class="name">
+                    </br>
+                    <img src="https://drive.google.com/uc?id=1IWe4cvqxjJEhuCcEs-KHAjkFGr6F8Gh6" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;">
+                    <h1>Judito N. Pepito Jr</h1>
+                    <p>Santo Nino 2, Lamac, Consolacion, Cebu</p>
+                    <p>Mobile: +639661668608</p>
+                    <p>Email: <u>jude.apepito.e@gmail.com</u></p>
+                    <p>Facebook: <a href ="https://www.facebook.com/Judejrpepito?mibextid=ZbWKwL">Judito Pepito</a></p>
+                    </br>
+                </div>
+                <div class="Personal Data">
+                </br>
+                    <h2>Personal Data</b> </h2>
+                    </br>
+                    <b>Date of Birth:</b> </br>
+                    <b>Place of Birth:</b> </br>
+                    <b>Civil Status:</b> </br>
+                    <b>Citizenship:</b> </br>
+                    <b>Religion:</b> </br>
+                    <b>Height:</b> </br>
+                    <b>Weight:</b> </br>
+                    <b>Father's Name:</b> </br>
+                    <b>Mother's Name:</b> </br>
+                    <b>SSS No.:</b> </br>
+                    <b>TIN #:</b> </br> 
+                    </br>        
+                </div>
+                <div style="margin-left: 50%; margin-top: -290px;"> 
+                    February 12, 2003</br>
+                    Cebu City</br>
+                    Single</br>
+                    Filipino</br>
+                    Roman Catholic</br>
+                    163cm</br>
+                    90kg</br>
+                    Jude B. Pepito</br>
+                    Ruthcencia H. Narido</br>
+                    33-91234893-5</br>
+                    274-321-672-000</br>
+                    </br>
+                </div>
+                <div class="Educational Background">
+                    <h2>Educational Background</b> </h2>
+                        </br>
+                        <b>Primary:</b>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+                        <b>Secondary:</b>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+                        <b>Tertiary:</b>   
+                </div>
+                <div style="margin-left: 50%; margin-top: -215px;"> 
+                    <b>Lamac Elementary School</b></br>
+                    Lamac, Consolacion, Cebu</br>
+                    2010-2016</br>
+                    </br>
+                    <b>Consolacion National Highscool-DC</b></br>
+                    Poblacion Occidental, Consolacion, Cebu</br>
+                    2016-2022</br>
+                    </br>
+                    <b>Cebu Technological University -  Danao Campus </b></br>
+                    Saband, Danao</br>
+                    2022-2023
+                    </br>
+                    </br>
+                </div>
+                <div class="Employment history">
+                    <h2>Employment history</h2>
+                    </br>
+                    <p><b>Concentrix UP Ayala Technohub</b></p>
+                    <p><b>Position:</b> Customer Service Adviser</p>
+                    <p><b>March 2014 - May 2016</b></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="scene" id="scene5">
+            <div class="right">
+                <div class="name">
+                    </br>
+                    <img src="https://drive.google.com/uc?id=1hCzrvtArebXGcUBHJib58sPHn4qFgASu" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;">\
+                    <h1>Kyle M. Sabatin</h1>
+                    <p>
+                        Block 4, Lot 21 and 22, Buenavista Homes, Jugan, Consolacion, Cebu<br />
+                        Mobile: +63947245462<br />
+                        Email: <u>kylesabatin9999@gmail.com</u>
+                    </p>               
+                    </br>
+                </div>
+                <div class="Personal Data">
+                </br>
+                    <h2>Personal Data</b> </h2>
+                    </br>
+                    <b>Date of Birth:</b> </br>
+                    <b>Place of Birth:</b> </br>
+                    <b>Civil Status:</b> </br>
+                    <b>Citizenship:</b> </br>
+                    <b>Religion:</b> </br>
+                    <b>Height:</b> </br>
+                    <b>Weight:</b> </br>
+                    <b>Father's Name:</b> </br>
+                    <b>Mother's Name:</b> </br>
+                    <b>SSS No.:</b> </br>
+                    <b>TIN #:</b> </br> 
+                    </br>        
+                </div>
+                <div style="margin-left: 50%; margin-top: -290px;"> 
+                    <p>
+                        November 20, 2002<br />
+                        Cebu City<br />
+                        Single<br />
+                        Filipino<br />
+                        LDS<br />
+                        170 cm<br />
+                        92 kg<br />
+                        Arturo M. Sabatin<br />
+                        Amethes M. Sabatin<br />
+                        None<br />
+                        None<br />
+                    </p>
+                    </br>
+                </div>
+                <div class="Educational Background">
+                    <h2>Educational Background</b> </h2>
+                        </br>
+                        <b>Primary:</b>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+                        <b>Secondary:</b>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+                        <b>Tertiary:</b>   
+                </div>
+                <div style="margin-left: 50%; margin-top: -215px;"> 
+                    Bulua Elementary School/ Jugan Elementary School<br />
+                    Cagayan de Oro, Misamis Oriental/ Jugan, Consolacion<br />
+                    2007-2013/ 2013-2015 </br>
+                    </br>
+                    Consolacion National High School - Day Class<br />
+                    Poblacion Occidental, Consolacion<br />
+                    2016-2022 </br>
+                    </br>
+                    Cebu Technological University Danao Campus<br />
+                    Sabang, Danao<br />
+                    2022-Present<br />
+                    </br>
+                </div>
+                <div class="Employment history">
+                    <h2>Employment history</h2>
+                    </br>
+                    <b>Philippitiks</b> <br />
+                    Position: Multimedia Photographer<br />
+                    May 2023 - April 2024<br />
+                </div>
+            </div>
+        </div>
+		<div class="scene" id="scene6">
+            <div class="right">
+                <div class="name">
+                    </br>
+                    <img src="https://drive.google.com/uc?id=1TlExdG6QNyRj2JFuwoibxzSp7W8UHwU2" alt="gfg-logo" style="width:200px;height:200px; border: 2px solid black;">\
+                    <h1>Vincent Alen P. Castro</h1>
+                    <p>
+                        Danao City Cebu Philippines <br />
+                        Mobile: +639672044895<br />
+                        Email: <u>vincentalenpuavincastro@gmail.com</u>
+                    </p>               
+                    </br>
+                </div>
+                <div class="Personal Data">
+                </br>
+                    <h2>Personal Data</b> </h2>
+                    </br>
+                    <b>Date of Birth:</b> </br>
+                    <b>Place of Birth:</b> </br>
+                    <b>Civil Status:</b> </br>
+                    <b>Citizenship:</b> </br>
+                    <b>Religion:</b> </br>
+                    <b>Height:</b> </br>
+                    <b>Weight:</b> </br>
+                    <b>Father's Name:</b> </br>
+                    <b>Mother's Name:</b> </br>
+                    <b>SSS No.:</b> </br>
+                    <b>TIN #:</b> </br> 
+                    </br>        
+                </div>
+                <div style="margin-left: 50%; margin-top: -290px;"> 
+                    <p>
+                        July 29, 2004<br />
+                        Cebu City<br />
+                        Single<br />
+                        Filipino<br />
+                        Roman Catholic<br />
+                        5 feet 10 inches<br />
+                        62 kg<br />
+                        Allen Castro<br />
+                        Ma. Lishel P. Castro<br />
+                        29-534354-03<br />
+                        432-7648-564-609<br />
+                    </p>
+                    </br>
+                </div>
+                <div class="Educational Background">
+                    <h2>Educational Background</b> </h2>
+                        </br>
+                        <b>Primary:</b>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+                        <b>Secondary:</b>
+                        </br>
+                        </br>
+                        </br>
+                        </br>
+                        <b>Tertiary:</b>   
+                </div>
+                <div style="margin-left: 50%; margin-top: -215px;"> 
+                   D.T. Durano Memorial Integrated School<br />
+                    Danao City, Cebu<br />
+                    2009-2015 </br>
+                    </br>
+                    D.T. Durano Memorial Integrated School<br />
+                    Danao City, Cebu<br />
+                    2015-2019 </br>
+                    </br>
+                    Cebu Technological University Danao Campus<br />
+                    Sabang, Danao<br />
+                    2019-2021<br />
+                    </br>
+                </div>
+                <div class="Employment history">
+                    <h2>Employment history</h2>
+                    </br>
+                    <b>Horizon Gaming</b> <br />
+                    Amsterdam, Netherlands<br />
+                    Admin-January 1, 2020 to December 29, 2022<br />
+                </div>
+            </div>
+        </div>
 
     </div>
-    <div class="bottom"> Thank you for watching</div>
+    <div class="bottom"> Thanks you for visiting our website! </div>
 </body>
 </html>
