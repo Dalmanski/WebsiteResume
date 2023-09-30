@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Resumes</title>
     <style>
         * {
             margin: 0;
@@ -42,7 +43,7 @@
             max-width: 100%; 
             max-height: 100%; 
             background-color: rgb(126, 126, 126);
-            background: url(https://i.imgur.com/EwKEHbf.png) no-repeat;
+            background-color: #102c36;
             background-size: cover;
             margin: 0px;
             display: grid;
@@ -98,7 +99,7 @@
             text-align: center;
             justify-content: left;
             width: 350px;
-            height: 150vh; 
+            height: 192vh; 
             padding: 20px;
             color: rgb(255, 255, 255);
             backdrop-filter: blur(30px);
@@ -134,14 +135,6 @@
             backdrop-filter: blur(30px);
         }
 
-        .bottom {
-            background-color: rgb(0, 0, 0);
-            border: 1px solid;
-            text-align: center;
-            color: rgb(255, 255, 255);
-            padding: 20px;
-            z-index: 20;
-        }
 
         .image,
         .Contact,
@@ -176,22 +169,27 @@
             if (selectedScene) {
                 selectedScene.style.display = 'block';
             }
-        }     
+        } 
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            showScene(2);
+        });
+        
     </script>
 </head>
 <body>
     <div class="top"> 
         <h2 class="logo">RESUME</h2>
         <nav class="navigation">
-            <a href="#">HOME</a>
-            <a href="/List.html">sample</a>
-            <a href="#">UNSA DIRI</a>
+            <a href="/Home.html">HOME</a>
+            <a href="/Website-resume-2.html">RESUMES</a>
+            <a href="/about.html">ABOUT</a>
         </nav>
     </div>
     <div class="full">
-        <div class="btn-container">
+        <div class="btn-container">         
             <div class="left">
-                <h3> Name: </h3>
+                </br>
                 <button class="btn" onclick="showScene(2)">
                     Kenjie Emmanuel Lagaras <br>
                     <!--<img src="images/Kenjie.jpg" class="img-fluid" alt="gfg-logo" style="width:200px; height:200px; border: 2px solid black;"> -->
@@ -223,11 +221,7 @@
             </div>
         </div>
 
-        <div class="scene" id="scene1" style="margin-top: 200px; text-align: center; width: 80%;">
-        <h1> GROUP 3 Creative Web Design! </h1>
-        </br>
-        <h4> Welcome to our online website! Explore our comprehensive resume, showing our qualifications, and experience. Gain valuable insights into our career journey and discover how we can contribute to your organization. Let's connect and explore potential opportunities together.</h4>
-        </div>
+
 
         <div class="scene" id="scene2">
             <div class="right">
@@ -258,9 +252,9 @@
                     <b>Father's Name:</b> </br>
                     <b>Mother's Name:</b> </br>
                     <b>SSS No.:</b> </br>
-                    <b>TIN #:</b> </br> 
-                    </br>        
+                    <b>TIN #:</b> </br>       
                 </div>
+            </br>
                 <div style="margin-left: 50%; margin-top: -290px;"> 
                     September 05, 2002 </br>
                     Cebu City</br>
@@ -273,7 +267,6 @@
                     Ruby Lagaras</br>
                     33-91234562-4</br>
                     254-325-623-000</br>
-                    </br>
                 </div>
                 <div class="Educational Background">
                     <h2>Educational Background</b> </h2>
@@ -303,7 +296,6 @@
                     Saband, Danao</br>
                     2022-2023
                     </br>
-                    </br>
                 </div>
                 <div class="Employment history">
                     <h2>Employment history</h2>
@@ -311,10 +303,6 @@
                     <b>SM Mall</b> </br>
                     Position: Sales Associate</br>
                     March 2014 - May 2016</br>
-                    </br>
-                    <b>Robinsons Mall</b></br>
-                    Position: Marketing Coordinator</br>
-                    June 2016 - December 2017</br>
                 </div>
             </div>
         </div>
@@ -471,7 +459,6 @@
                     <b>Cebu Technological University -  Danao Campus </b></br>
                     Saband, Danao</br>
                     2022-2023
-                    </br>
                     </br>
                 </div>
                 <div class="Employment history">
@@ -652,8 +639,6 @@
                 </div>
             </div>
         </div>
-
     </div>
-    <div class="bottom"> Thanks you for visiting our website! </div>
 </body>
 </html>
